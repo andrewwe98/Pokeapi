@@ -15,8 +15,8 @@ useEffect(() => {
         fetch(poke.url).then((response) => response.json())
       );
       Promise.all(pokemonData).then((pokemonDetails) => setPokemon(pokemonDetails));
-    }
-    ).catch((error) => console.error('Error fetching Pokemon data:', error));
+    })
+    .catch((error) => console.error('Error fetching Pokemon data:', error));
 }, []);
 
 const filteredPokemon = pokemon.filter((poke) => poke.name.toLowerCase().includes(search.toLowerCase()));

@@ -5,5 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/Pokeapi/' : '/',
   plugins: [react()],
-  
 })
