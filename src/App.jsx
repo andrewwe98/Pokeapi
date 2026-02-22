@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Search from './components/Search/Search'
-import Pokemoncard from './components/Pokemoncard/Pokemoncard'
+import PokemonCard from './components/Pokemoncard/Pokemoncard'
 
 function App() {
 const [pokemon, setPokemon] = useState([]);
@@ -29,7 +29,7 @@ const filteredPokemon = pokemon.filter((poke) => poke.name.toLowerCase().include
         </div>
       </div>
       <div className='Pokecard'>
-        <Pokemoncard pokemon= {filteredPokemon} />
+        <PokemonCard pokemon= {filteredPokemon} />
       </div>
     </div>
   );
