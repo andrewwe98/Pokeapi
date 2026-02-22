@@ -1,0 +1,43 @@
+.App{
+display: flex;
+flex-direction: column;
+}
+
+.navbar{
+background-color: red;
+width: 110%;
+position: relative;
+flex-direction: column;
+
+}
+
+
+input {
+  border: 1px solid #ccc;
+  margin-right: 15px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  background-color: white;
+width: 45%;
+position: relative;
+left: 30%;
+
+  
+}
+button {
+  border: 1px solid #ccc;
+  margin-right: 15px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  background-color: blue;
+width: 15%;
+position: relative;
+left: 35%;
+
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
