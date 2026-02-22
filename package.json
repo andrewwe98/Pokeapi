@@ -1,6 +1,7 @@
 {
   "name": "pokeapi",
   "private": true,
+  "homepage": "https://andrewwe98.github.io/Pokeapi",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
