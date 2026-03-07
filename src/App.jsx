@@ -6,6 +6,7 @@ import PokemonCard from './components/Pokemoncard/Pokemoncard'
 function App() {
 const [pokemon, setPokemon] = useState([]);
 const [search, setSearch] = useState("");
+//loading state
 const [loading, setLoading] = useState(true);
 useEffect(() => {
   fetch('https://pokeapi.co/api/v2/pokemon?limit=1025')
