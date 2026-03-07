@@ -6,7 +6,7 @@ import PokemonCard from './components/Pokemoncard/Pokemoncard'
 function App() {
 const [pokemon, setPokemon] = useState([]);
 const [search, setSearch] = useState("");
-
+const [loading, setLoading] = useState(true);
 useEffect(() => {
   fetch('https://pokeapi.co/api/v2/pokemon?limit=1025')
     .then((response) => response.json())
@@ -18,7 +18,12 @@ useEffect(() => {
     })
     .catch((error) => console.error('Error fetching Pokemon data:', error));
 }, []);
-
+if (1025 === pokemon.length && loading) {
+  setLoading(false);
+}
+if (loading) {
+  return <div className="loading">Loading...</div>;
+}
 const filteredPokemon = pokemon.filter((poke) => poke.name.toLowerCase().includes(search.toLowerCase()));
   return (
     <div className="App">
