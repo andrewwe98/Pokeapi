@@ -4,6 +4,7 @@ import pokemoncard from '../../assets/pokemoncard.jpg'
 const Pokemoncard = ({ pokemon }) => {
     return (
         <div className='pokemon-card' style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '15px', padding: '10px' }}>
+           // mapping through the pokemon array and displaying each pokemon image and name using css inline-block and absolute postioning.
             {pokemon.map((poke) => (
                 <div key={poke.id} className='pokemon-card-item'>
                     <div style={{ position: 'relative', display: 'inline-block', width: '100%' }}>

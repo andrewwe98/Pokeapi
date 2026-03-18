@@ -10,6 +10,7 @@ const [pokemon, setPokemon] = useState([]);
 const [search, setSearch] = useState("");
 //loading state
 const [loading, setLoading] = useState(true);
+//fetching pokremon data from first api call and then fetching each pokemon details
 useEffect(() => {
   fetch('https://pokeapi.co/api/v2/pokemon?limit=1025')
     .then((response) => response.json())
@@ -33,10 +34,12 @@ const filteredPokemon = pokemon.filter((poke) => poke.name.toLowerCase().include
       <div className="navbar">
         <div className="nav-middle flex-div"></div>
         <div className='search flex-div'>
+          //search component to filter pokemon by name
           <Search search={search} setSearch={setSearch} />
         </div>
       </div>
       <div className='Pokecard'>
+        //pokemon card component to display pokemon details
         <PokemonCard pokemon= {filteredPokemon} />
       </div>
     </div>
