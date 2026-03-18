@@ -4,7 +4,9 @@ import Search from './components/Search/Search'
 import PokemonCard from './components/Pokemoncard/Pokemoncard'
 
 function App() {
+  //pokemon state
 const [pokemon, setPokemon] = useState([]);
+//search state 
 const [search, setSearch] = useState("");
 //loading state
 const [loading, setLoading] = useState(true);
