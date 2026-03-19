@@ -4,7 +4,7 @@ import React from 'react'
 
 
 function Search({ search, setSearch }) {
-  return (\
+  return (
     //input field to search pokemon by name and updating the search state on change
     <input 
       type="text"
