@@ -4,11 +4,8 @@ A React + Vite application for exploring Pokémon data.
 
 ## Features
 
-- Browse Pokémon by generation
-- View detailed stats and abilities
+- Browse Pokémon 
 - Search and filter functionality
-- Fast, responsive UI with Vite
-
 ## Getting Started
 
 ### Prerequisites
