@@ -40,3 +40,10 @@ npm run build
 ## License
 
 MIT
+
+## Link
+
+https://andrewwe98.github.io/Pokeapi
+
+
+
